@@ -1,0 +1,82 @@
+:root {
+    --bg: #fff8f0;
+    --text: #222;
+    --primary: #9b5de5;
+    --contrast-bg: #000;
+    --contrast-text: #ffd700;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #6a1b9a;
+  }
+  
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .content h2 {
+    color: var(--primary);
+    margin-top: 2rem;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .toolbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+  }
+  
+  .toolbar button {
+    background-color: #f3e8ff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #4a148c;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .toolbar button:hover {
+    background-color: #e0cffe;
+  }
+  
+  .high-contrast {
+    --bg: var(--contrast-bg);
+    --text: var(--contrast-text);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    color: #666;
+  }
